@@ -1,3 +1,4 @@
+const express = require("express");
 
 
 
@@ -6,15 +7,14 @@
 
 
 
-
-
-module.exports = {
+module.exports = { 
     openController(params,callback) {
         try {
+            
             callback(params,null);
         }
         catch(e) {
             callback(e,null);
         }
-    }
+    } 
 }
